@@ -1,0 +1,595 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Club Sync Pty Ltd</title>
+<meta name="description" content="How Club Sync Pty Ltd (ABN 75 701 278 220) stores, maintains, uses and discloses personal information.">
+<meta name="robots" content="index, follow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:ital,wght@0,300..700;1,300..700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --ink:#14252d;
+    --ink-soft:#4d616b;
+    --paper:#f4f6f6;
+    --card:#ffffff;
+    --brand:#0d5257;
+    --brand-tint:#e3ecec;
+    --rule:#d5dedf;
+    --measure:66ch;
+    --gap:clamp(1.6rem,4vw,3rem);
+  }
+
+  *,*::before,*::after{box-sizing:border-box}
+
+  html{-webkit-text-size-adjust:100%}
+
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"Public Sans","Helvetica Neue",Arial,sans-serif;
+    font-size:17px;
+    line-height:1.62;
+    font-weight:380;
+    -webkit-font-smoothing:antialiased;
+  }
+
+  a{color:var(--brand);text-decoration:underline;text-underline-offset:2px;text-decoration-thickness:1px}
+  a:hover{text-decoration-thickness:2px}
+  :focus-visible{outline:2px solid var(--brand);outline-offset:3px;border-radius:2px}
+
+  .skip{
+    position:absolute;left:-9999px;top:0;background:var(--brand);color:#fff;
+    padding:.6rem 1rem;z-index:50;text-decoration:none;
+  }
+  .skip:focus{left:.5rem;top:.5rem}
+
+  /* ---------- masthead ---------- */
+  .masthead{
+    border-bottom:1px solid var(--rule);
+    background:var(--card);
+  }
+  .masthead__inner{
+    max-width:1180px;margin:0 auto;
+    padding:clamp(2.4rem,6vw,4.2rem) var(--gap) clamp(1.8rem,4vw,2.6rem);
+  }
+  .wordmark{
+    font-size:.72rem;font-weight:600;letter-spacing:.18em;text-transform:uppercase;
+    color:var(--brand);margin:0 0 1.6rem;
+  }
+  h1{
+    font-family:"Instrument Serif",Georgia,"Times New Roman",serif;
+    font-weight:400;
+    font-size:clamp(2.9rem,8vw,4.6rem);
+    line-height:1.02;
+    letter-spacing:-.012em;
+    margin:0;
+  }
+  .entity{
+    margin:1.4rem 0 0;
+    max-width:52ch;
+    color:var(--ink-soft);
+    font-size:1.02rem;
+  }
+  .entity strong{color:var(--ink);font-weight:600}
+  .stamp{
+    margin:1.8rem 0 0;padding-top:1.2rem;border-top:1px solid var(--rule);
+    display:flex;flex-wrap:wrap;gap:.45rem 2.2rem;
+    font-size:.75rem;letter-spacing:.09em;text-transform:uppercase;
+    color:var(--ink-soft);font-weight:500;
+  }
+
+  /* ---------- layout ---------- */
+  .shell{
+    max-width:1180px;margin:0 auto;
+    padding:clamp(2rem,5vw,3.4rem) var(--gap) 5rem;
+    display:grid;gap:clamp(2rem,5vw,3.6rem);
+    grid-template-columns:1fr;
+    align-items:start;
+  }
+  @media (min-width:60rem){
+    .shell{grid-template-columns:15rem minmax(0,1fr)}
+  }
+
+  /* ---------- clause index ---------- */
+  .index{font-size:.86rem}
+  .index__label{
+    font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink-soft);font-weight:600;margin:0 0 .9rem;
+  }
+  .index ol{list-style:none;margin:0;padding:0}
+  .index li{margin:0}
+  .index a{
+    display:grid;grid-template-columns:1.9rem 1fr;gap:.3rem;
+    padding:.34rem 0 .34rem .55rem;
+    border-left:2px solid var(--rule);
+    text-decoration:none;color:var(--ink-soft);
+    transition:color .18s ease,border-color .18s ease;
+  }
+  .index a span{font-variant-numeric:tabular-nums;font-weight:500}
+  .index a:hover{color:var(--ink);border-left-color:var(--ink-soft)}
+  .index a[aria-current="true"]{color:var(--brand);border-left-color:var(--brand);font-weight:600}
+
+  @media (min-width:60rem){
+    .index{position:sticky;top:2rem;max-height:calc(100vh - 4rem);overflow-y:auto}
+    .index__toggle{display:none}
+    .index__panel{display:block !important}
+  }
+  @media (max-width:59.99rem){
+    .index{
+      background:var(--card);border:1px solid var(--rule);border-radius:3px;
+      padding:1rem 1.1rem;
+    }
+    .index__label{margin-bottom:0}
+    .index__toggle{
+      all:unset;display:flex;width:100%;justify-content:space-between;align-items:center;
+      cursor:pointer;font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+      color:var(--ink-soft);font-weight:600;
+    }
+    .index__toggle::after{content:"+";font-size:1.1rem;line-height:1}
+    .index__toggle[aria-expanded="true"]::after{content:"–"}
+    .index__panel{display:none;margin-top:.9rem}
+  }
+
+  /* ---------- content ---------- */
+  .doc{max-width:var(--measure)}
+  .clause{
+    padding:2.4rem 0;
+    border-top:1px solid var(--rule);
+    scroll-margin-top:1.5rem;
+  }
+  .clause:first-of-type{border-top:0;padding-top:.4rem}
+
+  .clause__no{
+    font-size:.7rem;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--brand);font-weight:600;font-variant-numeric:tabular-nums;
+    margin:0 0 .55rem;
+  }
+  h2{
+    font-size:clamp(1.28rem,3vw,1.55rem);
+    line-height:1.22;font-weight:600;letter-spacing:-.008em;
+    margin:0 0 1.1rem;
+  }
+  h3{
+    font-size:.95rem;font-weight:600;
+    margin:2rem 0 .7rem;
+    color:var(--ink);
+  }
+  h3:first-of-type{margin-top:1.4rem}
+
+  .anchor{
+    margin-left:.5rem;font-weight:400;color:var(--rule);
+    text-decoration:none;font-size:.85em;
+    opacity:0;transition:opacity .15s ease,color .15s ease;
+  }
+  h2:hover .anchor,h2:focus-within .anchor{opacity:1;color:var(--ink-soft)}
+  .anchor:hover{color:var(--brand)}
+  @media (hover:none){.anchor{opacity:1;color:var(--rule)}}
+
+  p{margin:0 0 1.05rem}
+  p:last-child{margin-bottom:0}
+
+  ul{margin:0 0 1.05rem;padding:0;list-style:none}
+  ul li{
+    position:relative;padding-left:1.35rem;margin-bottom:.55rem;
+  }
+  ul li::before{
+    content:"";position:absolute;left:.15rem;top:.72em;
+    width:5px;height:1px;background:var(--brand);
+  }
+  ul li:last-child{margin-bottom:0}
+
+  .pull{
+    margin:0 0 1.05rem;padding:1.15rem 1.3rem;
+    background:var(--brand-tint);
+    border-left:3px solid var(--brand);
+    border-radius:0 3px 3px 0;
+  }
+  .pull p:last-child{margin-bottom:0}
+
+  .vendors{margin:0 0 1.05rem;padding:0;list-style:none}
+  .vendors li{
+    padding:.85rem 0;border-top:1px solid var(--rule);
+  }
+  .vendors li:last-child{border-bottom:1px solid var(--rule)}
+  .vendors strong{font-weight:600}
+  .vendors a{word-break:break-word}
+
+  .contact{
+    margin-top:1.2rem;padding:1.3rem 1.4rem;
+    background:var(--card);border:1px solid var(--rule);border-radius:3px;
+  }
+  .contact dt{
+    font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;
+    color:var(--ink-soft);font-weight:600;margin-bottom:.35rem;
+  }
+  .contact dd{margin:0;font-size:1.05rem}
+
+  /* ---------- colophon ---------- */
+  .colophon{
+    border-top:1px solid var(--rule);background:var(--card);
+  }
+  .colophon__inner{
+    max-width:1180px;margin:0 auto;
+    padding:2.2rem var(--gap) 3rem;
+    display:flex;flex-wrap:wrap;gap:.5rem 2.5rem;
+    font-size:.8rem;color:var(--ink-soft);
+  }
+
+  @media (prefers-reduced-motion:reduce){
+    *{transition:none !important;scroll-behavior:auto !important}
+  }
+  html{scroll-behavior:smooth}
+
+  @media print{
+    .index,.skip{display:none}
+    body{background:#fff;font-size:11pt}
+    .shell{display:block;padding:0}
+    .doc{max-width:none}
+    .clause{page-break-inside:avoid}
+    a{color:inherit;text-decoration:none}
+  }
+</style>
+</head>
+<body>
+
+<a class="skip" href="#doc">Skip to the policy</a>
+
+<header class="masthead">
+  <div class="masthead__inner">
+    <p class="wordmark">Club Sync</p>
+    <h1>Privacy Policy</h1>
+    <p class="entity">This document sets out the privacy policy of CLUB SYNC PTY LTD (ABN 75 701 278 220) (referred to in this privacy policy as '<strong>we</strong>', '<strong>us</strong>', or '<strong>our</strong>').</p>
+    <p class="stamp">
+      <span>Version 0.002</span>
+      <span>Last updated 18 August 2026</span>
+      <span>Australian Privacy Principles</span>
+    </p>
+  </div>
+</header>
+
+<div class="shell">
+
+  <nav class="index" aria-label="Clauses">
+    <p class="index__label"><button class="index__toggle" aria-expanded="false" aria-controls="index-panel">Clauses</button><span class="index__label-static">Clauses</span></p>
+    <div class="index__panel" id="index-panel">
+      <ol>
+        <li><a href="#introduction"><span>01</span>Introduction</a></li>
+        <li><a href="#what-we-collect"><span>02</span>What we collect</a></li>
+        <li><a href="#minors"><span>03</span>Minors</a></li>
+        <li><a href="#how-collected"><span>04</span>How it is collected</a></li>
+        <li><a href="#use"><span>05</span>How we use it</a></li>
+        <li><a href="#disclosure"><span>06</span>Disclosure</a></li>
+        <li><a href="#storage"><span>07</span>Storage</a></li>
+        <li><a href="#sensitive"><span>08</span>Sensitive information</a></li>
+        <li><a href="#marketing"><span>09</span>Marketing</a></li>
+        <li><a href="#de-identified"><span>10</span>De-identified information</a></li>
+        <li><a href="#security"><span>11</span>Security</a></li>
+        <li><a href="#links"><span>12</span>Links</a></li>
+        <li><a href="#access"><span>13</span>Access and correction</a></li>
+        <li><a href="#complaints"><span>14</span>Complaints</a></li>
+        <li><a href="#contact"><span>15</span>Contact us</a></li>
+      </ol>
+    </div>
+  </nav>
+
+  <main class="doc" id="doc">
+
+    <section class="clause" id="introduction">
+      <p class="clause__no">Clause 01</p>
+      <h2>Introduction<a class="anchor" href="#introduction" aria-label="Link to this clause">#</a></h2>
+      <p>The <em>Privacy Act 1988</em> (Cth) (<strong>Privacy Act</strong>) requires entities bound by the Australian Privacy Principles to have a privacy policy. We take our privacy obligations seriously and we've created this privacy policy to explain how we store, maintain, use and disclose personal information.</p>
+      <div class="pull">
+        <p>We are committed to preventing serious invasions of privacy and ensuring the protection of your personal information, so you can contact us using the details below if you have any questions or concerns.</p>
+      </div>
+      <p>By providing personal information (including sensitive information) to us, you consent to our storage, maintenance, use and disclosing of personal information in accordance with this privacy policy.</p>
+      <p>We may change this privacy policy from time to time by posting an updated copy on our website and we encourage you to check our website regularly to ensure that you are aware of our most current privacy policy.</p>
+    </section>
+
+    <section class="clause" id="what-we-collect">
+      <p class="clause__no">Clause 02</p>
+      <h2>Types of personal information we collect<a class="anchor" href="#what-we-collect" aria-label="Link to this clause">#</a></h2>
+      <p>The personal information we collect may include the following:</p>
+      <ul>
+        <li>name;</li>
+        <li>mailing or street address;</li>
+        <li>email address;</li>
+        <li>social media information;</li>
+        <li>telephone number and other contact details;</li>
+        <li>age;</li>
+        <li>date of birth;</li>
+        <li>the sports team which you play for and associated information such as your team name, your role for the current season, disciplinary action within the sporting sessions (such as a yellow or red card), your soccer registration number, award and honour roll history, length of time you have been part of the sports team, your player of the match votes;</li>
+        <li>credit card or other payment information;</li>
+        <li>sensitive information (such as the relevant player's gender and sexual orientation) as set out below;</li>
+        <li>information about your business or personal circumstances;</li>
+        <li>information in connection with client surveys, questionnaires and promotions;</li>
+        <li>your device identity and type, I.P. address, geo-location information, page view statistics, advertising data and standard web log information;</li>
+        <li>information about third parties; and</li>
+        <li>any other information provided by you to us via our website or our online presence, or otherwise required by us or provided by you.</li>
+      </ul>
+    </section>
+
+    <section class="clause" id="minors">
+      <p class="clause__no">Clause 03</p>
+      <h2>Personal information of minors<a class="anchor" href="#minors" aria-label="Link to this clause">#</a></h2>
+      <p>If we collect personal information from individuals under the age of 18, we will assess their capacity to consent on a case-by-case basis in accordance with the Australian Privacy Principles (APP) Guidelines. As a general principle, an individual under the age of 18 may have the capacity to consent if they demonstrate sufficient maturity to understand the nature and consequences of what is being proposed. Where it is determined that the individual does not have such capacity, we will seek verifiable consent from a parent or guardian.</p>
+      <p>If it is not practicable to assess capacity on a case-by-case basis, we will generally assume that individuals aged 15 and above have the capacity to provide consent, unless there are reasonable grounds to believe otherwise. Parents or guardians may contact us at <a href="mailto:admin@clubsync.com.au?subject=Privacy">admin@clubsync.com.au</a> to review, manage, or request deletion of their child's personal information.</p>
+    </section>
+
+    <section class="clause" id="how-collected">
+      <p class="clause__no">Clause 04</p>
+      <h2>How personal information is collected<a class="anchor" href="#how-collected" aria-label="Link to this clause">#</a></h2>
+      <p>We will collect your personal information in a lawful and fair way. We will only collect your personal information where you have consented to it, or otherwise in accordance with the law.</p>
+
+      <h3>How we collect information from you</h3>
+      <p>We may collect personal information where you:</p>
+      <ul>
+        <li>contact us through our website;</li>
+        <li>receive goods or services from us;</li>
+        <li>submit any of our online inquiry forms;</li>
+        <li>communicate with us via email, telephone, SMS, social applications (such as LinkedIn or Facebook) or otherwise;</li>
+        <li>interact with our website, social applications, services, content and advertising; and</li>
+        <li>invest in our business or enquire as to a potential purchase in our business.</li>
+      </ul>
+
+      <h3>How we collect information from third parties</h3>
+      <p>Where possible, we collect your personal information directly from you. However, there may be occasions when we collect personal information (including sensitive information) about you from someone else. For example, where a sports team provides us with your information in connection with our services, the league, sporting teams, maintaining records of performance and voting and any other related services communicated to you.</p>
+
+      <h3>How you provide information for someone else</h3>
+      <p>If you are providing personal and/or sensitive information on behalf of someone else, you must have the consent of that person to provide their personal and/or sensitive information to us to be collected, used, and disclosed in accordance with this privacy policy.</p>
+      <p>If you are providing personal and/or sensitive information on behalf of someone under the age of 18 (<strong>Minor</strong>), you must be that Minor's parent or legal guardian and you must provide consent for the Minor's personal and/or sensitive information to be collected, used and disclosed in accordance with this privacy policy.</p>
+
+      <h3>How we collect and use information from cookies and other tools</h3>
+      <p>We may also collect personal information from you when you use or access our website or our social media pages. This may be done through use of web analytics tools, 'cookies' or other similar tracking technologies that allow us to track and analyse your website usage. Cookies are small files that store information on your computer, mobile phone or other device and enable and allow the creator of the cookie to identify when you visit different websites. If you do not wish information to be stored as a cookie, you can disable cookies in your web browser.</p>
+      <p>We may use:</p>
+      <ul class="vendors">
+        <li><strong>Google Analytics</strong> to collect and process data, including when you use third party websites or apps. To find out more see <a href="http://www.google.com/policies/privacy/partners/">How Google uses data when you use our partners' sites or apps</a>.</li>
+        <li><strong>Resend</strong> for email and administrative purposes such as to send code-driven transactional emails and processing inbound emails, as Resend is a cloud-based email API platform. To find out more see: <a href="https://resend.com/legal/privacy-policy">https://resend.com/legal/privacy-policy</a></li>
+        <li><strong>DRIBL</strong> in connection with delivering our services and platform to you. <strong>DRIBL</strong> is a digital platform that has been purpose-build for grassroots football. To find out more see: <a href="https://dribl.com/privacy/">https://dribl.com/privacy/</a></li>
+        <li><strong>Sentry</strong> for application performance monitoring, it assists software developers to find, diagnose, and fix crashes, bugs, and performance slowdowns in real time. To find out more see: <a href="https://sentry.io/privacy/">https://sentry.io/privacy/</a></li>
+        <li><strong>Aptabase</strong> in connection with our mobile, desktop and web apps. Aptabase is a telemetry and analytics service for developers to monitor the performance of their desktop, mobile, and web apps. To find out more see: <a href="https://aptabase.com/legal/privacy">https://aptabase.com/legal/privacy</a></li>
+        <li><strong>TelemetryDeck</strong> to track user engagement, retention, and feature usage without collecting personally identifiable information and storing IP addresses. TelemetryDeck is a cookieless app and website analytics platform designed for developers. To find out more see: <a href="https://telemetrydeck.com/privacy/">https://telemetrydeck.com/privacy/</a></li>
+        <li><strong>Plausible Analytics</strong> to track website traffic and performance metrics without using cookies or collecting personal data. To find out more see: <a href="https://plausible.io/privacy">https://plausible.io/privacy</a></li>
+        <li><strong>Umami</strong> to track core website traffic and visitor metrics without using cookies or collecting personally identifiable information. To find out more see: <a href="https://umami.is/privacy">https://umami.is/privacy</a></li>
+        <li><strong>Wix</strong> for website building, web hosting, and business tools. To find out more see: <a href="https://www.wix.com/about/privacy">https://www.wix.com/about/privacy</a></li>
+        <li>VentraIP for web hosting, domain management and email services. To find out more see: <a href="https://ventraip.com.au/terms-policies-agreements/privacy-policy/">https://ventraip.com.au/terms-policies-agreements/privacy-policy/</a></li>
+      </ul>
+    </section>
+
+    <section class="clause" id="use">
+      <p class="clause__no">Clause 05</p>
+      <h2>Use of your personal information<a class="anchor" href="#use" aria-label="Link to this clause">#</a></h2>
+      <p>We collect and use personal information for the following primary purposes:</p>
+      <ul>
+        <li>to provide goods, services or information to you;</li>
+        <li>in connection with your eligibility to play for them;</li>
+        <li>in connection with the league and the associated awards (being the George Collier Award, the George Ellis Award, the Alchin Family Award and any other relevant awards);</li>
+        <li>for record keeping and administrative purposes;</li>
+        <li>to provide information about you to our contractors, employees, consultants, agents or other third parties for the purpose of providing goods or services to you;</li>
+        <li>to improve and optimise our service offering and customer experience;</li>
+        <li>to comply with our legal obligations, resolve disputes or enforce our agreements with third parties;</li>
+        <li>to send you administrative messages, reminders, notices, updates, security alerts, and other information requested by you; and</li>
+        <li>to consider an application of employment from you.</li>
+      </ul>
+      <p>We may also use your personal information for:</p>
+      <ul>
+        <li>secondary purposes closely related to the primary purpose, in circumstances where you would reasonably expect such use;</li>
+        <li>such purposes where we reasonably believe that use of your personal information is necessary to lessen or prevent a serious threat to the life, health or safety of any individual, or to public health or safety, and it is unreasonable or impracticable to obtain your consent;</li>
+        <li>any other purpose for which we receive consent from you; or</li>
+        <li>any other purpose which is permitted or required under applicable privacy laws.</li>
+      </ul>
+    </section>
+
+    <section class="clause" id="disclosure">
+      <p class="clause__no">Clause 06</p>
+      <h2>How we disclose your personal information<a class="anchor" href="#disclosure" aria-label="Link to this clause">#</a></h2>
+      <p>We respect your privacy, and we will take reasonable steps to keep your personal information confidential and protected. We may disclose your personal information to:</p>
+      <ul>
+        <li>other sports teams in the relevant sports league in connection with your eligibility to play for them;</li>
+        <li>in connection with the league and the associated awards (being the George Collier Award, the George Ellis Award, the Alchin Family Award and any other relevant awards);</li>
+        <li>our professional advisors such as lawyers, accountants and auditors;</li>
+        <li>our related entities; or</li>
+        <li>any third parties you have consented personal information to be disclosed to.</li>
+      </ul>
+      <p>We may also disclose personal information to third party contractors as required for us to provide our goods and services to you, such as cloud-service providers, IT professionals, marketing agencies and debt collection agencies.</p>
+      <p>We take care to work with such third parties who we believe maintain an acceptable standard of data security and require them not to use your personal information for any purpose except for those activities we have asked them to perform on our behalf.</p>
+      <p>We will not otherwise disclose your personal information unless:</p>
+      <ul>
+        <li>you have consented to us disclosing your personal information for particular circumstances;</li>
+        <li>as needed in an emergency or in investigation suspected criminal activity;</li>
+        <li>we are required to disclose under a subpoena, court order or other mandatory reporting requirements;</li>
+        <li>we reasonably believe that disclosure of your information is necessary to lessen or prevent a serious threat to the life, health or safety of any individual, or to public health or safety, and it is unreasonable or impracticable to obtain your consent;</li>
+        <li>it is reasonably necessary for the establishment, exercise or defence of a legal claim; or</li>
+        <li>it is otherwise authorised or required by law.</li>
+      </ul>
+    </section>
+
+    <section class="clause" id="storage">
+      <p class="clause__no">Clause 07</p>
+      <h2>Storage of your personal information<a class="anchor" href="#storage" aria-label="Link to this clause">#</a></h2>
+      <p>All personal information we collect is stored on servers located in Australia and, for the most part, we do not disclose or transfer personal information overseas.</p>
+      <p>However, the cloud service providers we engage to provide us Australian-based servers may operate overseas disaster recovery sites or have personnel overseas who may access the personal information we hold to assist us in managing our servers.</p>
+      <p>We also may use Google Analytics to track web traffic information which is operated by Google which stores information across multiple countries.</p>
+      <p>When you communicate with us through a social media service such as Facebook or Twitter, the social media provider and its partners may collect and hold your personal information overseas.</p>
+    </section>
+
+    <section class="clause" id="sensitive">
+      <p class="clause__no">Clause 08</p>
+      <h2>Sensitive information<a class="anchor" href="#sensitive" aria-label="Link to this clause">#</a></h2>
+
+      <h3>Collection of sensitive information</h3>
+      <p>We may collect sensitive information about you during the course of providing you our goods and services. We will only collect this sensitive information where you consent to such collection and either directly provide us with this information or it is provided by a referring health care provider.</p>
+
+      <h3>Types of sensitive information we collect</h3>
+      <p>The sensitive information we collect may include the following:</p>
+      <ul>
+        <li>the relevant player's gender and sexual orientation; and</li>
+        <li>any other sensitive information provided by you or a third party to us via our website or platforms, or otherwise provided by you or a third party to us.</li>
+      </ul>
+
+      <h3>How we use your sensitive information</h3>
+      <p>Your sensitive information will only be used for the purpose of:</p>
+      <ul>
+        <li>to assess the eligibility of and place the relevant player who has disclosed sensitive information in the correct sporting team;</li>
+        <li>providing you with our goods and services;</li>
+        <li>complying with our legal obligations, resolving disputes or enforcing our agreements with you;</li>
+        <li>sending you messages, reminders, notices, updates, security alerts, and other information requested by you; or</li>
+        <li>any other purpose which is permitted or required under applicable privacy laws.</li>
+      </ul>
+
+      <h3>How we disclose your sensitive information</h3>
+      <p>Your sensitive information will only be disclosed to third parties for the purpose of:</p>
+      <ul>
+        <li>providing the relevant sports team with the required information to enrol or fulfil the registration obligations for the player in the correct team; or</li>
+        <li>any other purpose which is permitted or required under applicable privacy laws.</li>
+      </ul>
+
+      <h3>How you can withdraw consent</h3>
+      <p>If you wish to withdraw your consent to our collection, use or disclosure of your sensitive information, please contact us using the contact details set out below. We will deal with all such requests within a reasonable timeframe.</p>
+    </section>
+
+    <section class="clause" id="marketing">
+      <p class="clause__no">Clause 09</p>
+      <h2>Marketing<a class="anchor" href="#marketing" aria-label="Link to this clause">#</a></h2>
+      <p>We may at times send you marketing communications which will be done in accordance with the <em>Spam Act 2003</em> (Cth) (<strong>Spam Act</strong>).</p>
+      <p>If we do, we may use email, SMS, social media, phone or mail to send you direct marketing communications.</p>
+      <p>Where consent is needed, we will ask you for your consent before sending you marketing communications, except where you:</p>
+      <ul>
+        <li>have explicitly opted-in to receiving email marketing from us in the past; or</li>
+        <li>were given the option to opt-out of email marketing when you initially signed up for one of our platforms and you did not do so.</li>
+      </ul>
+      <p>You can, at any time, opt out of receiving marketing materials from us by using the opt-out facility provided (e.g., an unsubscribe link on emails we send you) or by contacting us via the details provided at the end of this privacy policy. We will implement such a request as soon as possible, however, cannot guarantee that such a response will be immediate.</p>
+    </section>
+
+    <section class="clause" id="de-identified">
+      <p class="clause__no">Clause 10</p>
+      <h2>De-identified information<a class="anchor" href="#de-identified" aria-label="Link to this clause">#</a></h2>
+      <p>The information we collect may have analytical, educational, or commercial value to us. Where we have de-identified the information we have collected, we reserve the right to process and distribute such information.</p>
+    </section>
+
+    <section class="clause" id="security">
+      <p class="clause__no">Clause 11</p>
+      <h2>Security<a class="anchor" href="#security" aria-label="Link to this clause">#</a></h2>
+      <p>We take reasonable steps to ensure your personal information is secure and protected from misuse or unauthorised access. Our information technology systems are password protected, and we use a range of administrative and technical measures to protect these systems. However, we cannot guarantee the security of your personal information.</p>
+    </section>
+
+    <section class="clause" id="links">
+      <p class="clause__no">Clause 12</p>
+      <h2>Links<a class="anchor" href="#links" aria-label="Link to this clause">#</a></h2>
+      <p>Our website may contain links to other websites. Those links are provided for convenience and may not remain current or be maintained. We are not responsible for the privacy practices of those linked websites and we suggest you review the privacy policies of those websites before using them.</p>
+    </section>
+
+    <section class="clause" id="access">
+      <p class="clause__no">Clause 13</p>
+      <h2>Requesting access or correcting your personal information<a class="anchor" href="#access" aria-label="Link to this clause">#</a></h2>
+      <p>If you wish to request access to the personal information we hold about you, please contact us using the contact details set out below including your name and contact details. We may need to verify your identity before providing you with your personal information. In some cases, we may be unable to provide you with access to all your personal information and where this occurs, we will explain why. We will deal with all requests for access to personal information within a reasonable timeframe.</p>
+      <p>If you think that any personal information we hold about you is inaccurate, please contact us using the contact details set out below and we will take reasonable steps to ensure that it is corrected.</p>
+    </section>
+
+    <section class="clause" id="complaints">
+      <p class="clause__no">Clause 14</p>
+      <h2>Complaints<a class="anchor" href="#complaints" aria-label="Link to this clause">#</a></h2>
+      <p>If you wish to complain about how we handle your personal information held by us, please contact us using the details set out below including your name and contact details. We will investigate your complaint promptly and respond to you within a reasonable timeframe.</p>
+    </section>
+
+    <section class="clause" id="contact">
+      <p class="clause__no">Clause 15</p>
+      <h2>Contact us<a class="anchor" href="#contact" aria-label="Link to this clause">#</a></h2>
+      <p>For further information about our privacy policy or practices, or to access or correct your personal information, or make a complaint, please contact us using the details set out below:</p>
+      <dl class="contact">
+        <dt>Email</dt>
+        <dd><a href="mailto:admin@clubsync.com.au">admin@clubsync.com.au</a></dd>
+      </dl>
+    </section>
+
+  </main>
+</div>
+
+<footer class="colophon">
+  <div class="colophon__inner">
+    <span>Club Sync Pty Ltd · ABN 75 701 278 220</span>
+    <span>Our privacy policy was last updated on 18 Aug 2026.</span>
+    <span>Version 0.002</span>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  // Mobile clause index toggle
+  var toggle = document.querySelector(".index__toggle");
+  var panel  = document.getElementById("index-panel");
+  var staticLabel = document.querySelector(".index__label-static");
+
+  function isMobile(){ return window.matchMedia("(max-width: 59.99rem)").matches; }
+
+  function syncLabel(){
+    if (!toggle || !staticLabel) return;
+    if (isMobile()){
+      toggle.style.display = "";
+      staticLabel.style.display = "none";
+    } else {
+      toggle.style.display = "none";
+      staticLabel.style.display = "";
+    }
+  }
+  syncLabel();
+  window.addEventListener("resize", syncLabel);
+
+  if (toggle && panel){
+    toggle.addEventListener("click", function(){
+      var open = toggle.getAttribute("aria-expanded") === "true";
+      toggle.setAttribute("aria-expanded", String(!open));
+      panel.style.display = open ? "none" : "block";
+    });
+    panel.addEventListener("click", function(e){
+      if (e.target.closest("a") && isMobile()){
+        toggle.setAttribute("aria-expanded","false");
+        panel.style.display = "none";
+      }
+    });
+  }
+
+  // Scroll-spy on the clause index
+  var links = Array.prototype.slice.call(document.querySelectorAll(".index a"));
+  var map = {};
+  links.forEach(function(a){
+    var id = a.getAttribute("href").slice(1);
+    map[id] = a;
+  });
+  var sections = Array.prototype.slice.call(document.querySelectorAll(".clause"));
+
+  function setCurrent(id){
+    links.forEach(function(a){ a.removeAttribute("aria-current"); });
+    if (map[id]) map[id].setAttribute("aria-current","true");
+  }
+
+  if ("IntersectionObserver" in window){
+    var visible = {};
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        visible[en.target.id] = en.isIntersecting;
+      });
+      for (var i = 0; i < sections.length; i++){
+        if (visible[sections[i].id]){ setCurrent(sections[i].id); break; }
+      }
+    }, { rootMargin: "-10% 0px -70% 0px", threshold: 0 });
+    sections.forEach(function(s){ io.observe(s); });
+  }
+
+  // Copy a deep link when a clause anchor is clicked
+  document.querySelectorAll(".anchor").forEach(function(a){
+    a.addEventListener("click", function(){
+      var url = location.origin + location.pathname + a.getAttribute("href");
+      if (navigator.clipboard) navigator.clipboard.writeText(url).catch(function(){});
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
